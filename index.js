@@ -17,7 +17,8 @@ function capture() {
     if (!settings().enabled) return;
     const active = document.activeElement;
     if (active?.id === 'ste-text') return;
-    if (active instanceof HTMLTextAreaElement || active instanceof HTMLInputElement) {
+    const isTextField = active instanceof HTMLTextAreaElement || (active instanceof HTMLInputElement && ['text', 'search', 'url', 'tel', 'password'].includes(active.type));
+    if (isTextField) {
         const { selectionStart: start, selectionEnd: end } = active;
         if (typeof start === 'number' && end > start) {
             const text = active.value.slice(start, end);

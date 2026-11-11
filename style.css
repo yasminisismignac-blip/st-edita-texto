@@ -1,0 +1,46 @@
+#st-edita-texto-settings .ste-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 4px;
+}
+
+#st-edita-texto-settings .ste-help {
+    margin: 0;
+    opacity: .85;
+}
+
+#st-edita-texto-settings #ste-text {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#st-edita-texto-settings .ste-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#st-edita-texto-settings .ste-buttons button {
+    flex: 1 1 130px;
+    min-height: 42px;
+    white-space: normal;
+}
+
+#st-edita-texto-settings .ste-status {
+    min-height: 1.5em;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: var(--SmartThemeBlurTintColor, rgba(128, 128, 128, .12));
+}
+
+#st-edita-texto-settings .ste-status.ste-error {
+    color: var(--SmartThemeQuoteColor, #ef9a9a);
+}
+
+@media (max-width: 600px) {
+    #st-edita-texto-settings .ste-buttons {
+        flex-direction: column;
+    }
+}

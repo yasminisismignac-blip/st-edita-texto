@@ -1,0 +1,12 @@
+{
+  "display_name": "Editar texto selecionado",
+  "loading_order": 50,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Yasmin Isis",
+  "version": "1.0.0",
+  "description": "Edite, apague ou peça uma sugestão de IA para um trecho selecionado, com controles na aba Extensions.",
+  "homePage": "https://github.com/yasminisismignac-blip/st-edita-texto"
+}
